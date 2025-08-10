@@ -1,0 +1,19 @@
+services:
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    restart: unless-stopped
+    ports:
+      - ${PORT:-30090}:9696
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ:-Australia/Brisbane}
+    volumes:
+      - ${DATA_PATH}/prowlarr/config:/config
+    networks:
+      - prowlarr-network
+
+networks:
+  prowlarr-network:
+    driver: bridge 

@@ -1,0 +1,105 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+env.example
+
+# Docker volumes and data
+data/
+volumes/
+config/
+logs/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+
+# Docker
+.dockerignore
+
+# Application specific
+# Budget app
+apps/Budget/backend/node_modules/
+apps/Budget/public/build/
+
+# Tides app
+apps/tides/node_modules/
+apps/tides/build/
+
+# Marina Luke Wedding
+apps/marina-luke-wedding/node_modules/
+
+# Cors anywhere
+apps/cors-anywhere/node_modules/
+
+# Sample data and test files
+sample-data.json
+sample-data.sql
+test-*.js
+debug-*.js
+check-*.js
+fix-*.js
+migrate-*.js
+set-*.js
+export-*.js
+create-*.js
+cleanup-*.js
+
+# Scripts and automation
+*.ps1
+*.sh
+*.bat
+
+# Documentation that might contain sensitive info
+TROUBLESHOOTING.md
+DOCKER_TROUBLESHOOTING.md
+PROXY_ANALYSIS.md

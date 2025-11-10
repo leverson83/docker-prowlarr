@@ -13,6 +13,8 @@ services:
       - ${DATA_PATH}/prowlarr/config:/config
     networks:
       - homelab-network
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
     # Add healthcheck to verify config directory is available
     healthcheck:
       test: ["CMD", "test", "-d", "/config"]
